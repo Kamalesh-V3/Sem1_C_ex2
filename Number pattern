@@ -1,0 +1,23 @@
+[24bcs105@mepcolinux exp3]$cat pgr1.c
+#include<stdio.h>
+int main()
+{
+   int a,n,i;
+   printf("Enter a number:");
+   scanf("%d",&a);
+   for(n=1;n<=a;n++)
+   {
+      for(i=1;i<=n;i++)
+      {
+         printf("%d",n);
+      }
+         printf("\n");
+   }
+   return 0;
+}
+[24bcs105@mepcolinux exp3]$./1_output
+Enter a number:4
+1
+22
+333
+4444
