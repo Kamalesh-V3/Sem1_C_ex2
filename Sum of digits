@@ -1,0 +1,18 @@
+[24bcs105@mepcolinux exp3]$cat pgr3.c
+#include<stdio.h>
+int main()
+{
+   long long int a,sum=0;
+   printf("Enter a number:");
+   scanf("%lld",&a);
+   while(a>0)
+   {
+      sum=sum+(a%10);
+      a=a/10;
+   }
+   printf("The sum of the digits is %lld",sum);
+   return 0;
+}
+[24bcs105@mepcolinux exp3]$./3_output
+Enter a number:123
+The sum of the digits is 6
