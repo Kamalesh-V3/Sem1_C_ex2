@@ -1,0 +1,23 @@
+[24bcs105@mepcolinux exp3]$cat pgr2.c
+#include<stdio.h>
+int main()
+{
+   int fact=1,j=2,n;
+   printf("Enter a number: ");
+   scanf("%d",&n);
+   if(n==0||n==1)
+      printf("Factorial of the %d is %d",n,fact);
+   else
+   {
+      while(j<=n)
+      {
+         fact=j*fact;
+         j=j+1;
+      }
+      printf("Factorial of %d is %d ",n,fact);
+   }
+   return 0;
+}
+[24bcs105@mepcolinux exp3]$./2_output
+Enter a number: 4
+Factorial of 4 is 24 
