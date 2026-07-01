@@ -1,0 +1,25 @@
+[24bcs105@mepcolinux exp3]$cat pgr5.c
+#include<stdio.h>
+int main()
+{
+   int a=0,b=1,c,d;
+   printf("Enter a number:");
+   scanf("%d",&d);
+   printf("%d%d",a,b);
+   if(d==0||d==1)
+      printf("are the fibonacci series");
+   else{
+      do{
+         c=a+b;
+         printf("%d",c);
+         a=b;
+         b=c;
+         d=d-1;
+      }while((d-2)>0);
+      printf("are the fibonacci series");
+   }
+   return 0;
+}
+[24bcs105@mepcolinux exp3]$./5_output
+Enter a number:4
+0112are the fibonacci series
