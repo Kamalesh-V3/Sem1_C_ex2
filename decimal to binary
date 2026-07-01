@@ -1,0 +1,26 @@
+[24bcs105@mepcolinux exp3]$cat pgr4.c
+#include<stdio.h>
+int main()
+{
+   int d,i=1,b=0,r;
+   printf("Enter decimal number:");
+   scanf("%d",&d);
+   if(d<0)
+      printf("Invalid number");
+   else
+   {
+      while(d!=0)
+      {
+         r=d%2;
+         d/=2;
+         b+=(r*i);
+         i*=10;
+      }
+      printf("Binary number is %d",b);
+   }
+   return 0;
+}
+
+[24bcs105@mepcolinux exp3]$./4_output
+Enter decimal number:34
+Binary number is 100010
